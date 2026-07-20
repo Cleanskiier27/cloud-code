@@ -70,3 +70,36 @@
 2026-07-20 20:24:22.733 [info] Executing: gcloud config config-helper --format json
 2026-07-20 20:24:23.754 [info] Executing: gcloud auth application-default print-access-token
 2026-07-20 20:24:24.620 [info] Verified that user is logged in to gcloud CLI and ADC.
+2026-07-20 20:35:04.044 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:05.419 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:05.464 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 20:35:08.820 [info] MCP config plugin configureMcpServers called with servers: [{"id":"bigquery","mode":"remote","selected":false},{"id":"spanner","mode":"remote","selected":false},{"id":"alloydb","mode":"remote","selected":false},{"id":"cloud-sql","mode":"remote","selected":false},{"id":"knowledge_catalog","mode":"remote","selected":false},{"id":"dataproc","mode":"remote","selected":true}]
+2026-07-20 20:35:08.821 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:08.821 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 20:35:08.822 [info] Installed MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:08.823 [info] Updated MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:09.521 [info] MCP config plugin configureMcpServers called with servers: [{"id":"bigquery","mode":"remote","selected":false},{"id":"spanner","mode":"remote","selected":false},{"id":"alloydb","mode":"remote","selected":false},{"id":"cloud-sql","mode":"remote","selected":false},{"id":"knowledge_catalog","mode":"remote","selected":true},{"id":"dataproc","mode":"remote","selected":true}]
+2026-07-20 20:35:09.522 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:09.522 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 20:35:09.523 [info] Installed MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:09.523 [info] Updated MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:10.087 [info] MCP config plugin configureMcpServers called with servers: [{"id":"bigquery","mode":"remote","selected":true},{"id":"spanner","mode":"remote","selected":false},{"id":"alloydb","mode":"remote","selected":false},{"id":"cloud-sql","mode":"remote","selected":false},{"id":"knowledge_catalog","mode":"remote","selected":true},{"id":"dataproc","mode":"remote","selected":true}]
+2026-07-20 20:35:10.087 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:10.088 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 20:35:10.088 [info] Installed MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:10.089 [info] Updated MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:10.581 [info] MCP config plugin configureMcpServers called with servers: [{"id":"bigquery","mode":"remote","selected":true},{"id":"spanner","mode":"remote","selected":true},{"id":"alloydb","mode":"remote","selected":false},{"id":"cloud-sql","mode":"remote","selected":false},{"id":"knowledge_catalog","mode":"remote","selected":true},{"id":"dataproc","mode":"remote","selected":true}]
+2026-07-20 20:35:10.581 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:10.582 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 20:35:10.582 [info] Installed MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:10.583 [info] Updated MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:11.128 [info] MCP config plugin configureMcpServers called with servers: [{"id":"bigquery","mode":"remote","selected":true},{"id":"spanner","mode":"remote","selected":true},{"id":"alloydb","mode":"remote","selected":true},{"id":"cloud-sql","mode":"remote","selected":false},{"id":"knowledge_catalog","mode":"remote","selected":true},{"id":"dataproc","mode":"remote","selected":true}]
+2026-07-20 20:35:11.128 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:11.128 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 20:35:11.129 [info] Installed MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:11.129 [info] Updated MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:11.613 [info] MCP config plugin configureMcpServers called with servers: [{"id":"bigquery","mode":"remote","selected":true},{"id":"spanner","mode":"remote","selected":true},{"id":"alloydb","mode":"remote","selected":true},{"id":"cloud-sql","mode":"remote","selected":true},{"id":"knowledge_catalog","mode":"remote","selected":true},{"id":"dataproc","mode":"remote","selected":true}]
+2026-07-20 20:35:11.613 [info] MCP config plugin: ideType: 6
+2026-07-20 20:35:11.614 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 20:35:11.614 [info] Installed MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:35:11.614 [info] Updated MCP servers configuration in /home/cleanskiier27/.gemini/settings.json

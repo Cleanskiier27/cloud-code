@@ -16,3 +16,4 @@
 2026-07-20 19:50:00.104 [info] > pyenv which python
 2026-07-20 19:50:00.104 [info] cwd: .
 2026-07-20 19:50:02.175 [info] Starting Jedi language server for cleanskiier27.
+2026-07-20 20:30:25.059 [error] Unable to find workspace for given file
