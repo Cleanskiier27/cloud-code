@@ -87,3 +87,10 @@ to select an already authenticated account to use.
 2026-07-24 21:27:55.515 [info] MCP config plugin: ideType: 6
 2026-07-24 21:27:56.894 [info] MCP config plugin: MCP config key: mcpServers
 2026-07-24 21:29:03.115 [info] triggerGcloudAuthLogin called
+2026-07-24 22:01:54.881 [info] Deactivating bigquery
+2026-07-24 22:01:54.881 [info] Deactivating GCS
+2026-07-24 22:01:54.881 [info] Deactivating Databases
+2026-07-24 22:01:54.881 [info] Deactivating Catalog Feature
+2026-07-24 22:01:54.881 [info] Deactivating dataproc
+2026-07-24 22:01:54.881 [info] SparkMonitorPlugin: Deactivating...
+2026-07-24 22:01:54.881 [info] Deactivating settings

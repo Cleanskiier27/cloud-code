@@ -66,3 +66,10 @@
 2026-07-24 21:50:48.342 [info] SparkMonitorPlugin: State change - experiment: true, setting: true, overall: true
 2026-07-24 21:50:48.343 [info] MCP config plugin: MCP config key: mcpServers
 2026-07-24 21:50:48.536 [info] SparkMonitorPlugin: Wrote filter config file with value: true
+2026-07-24 21:56:11.892 [info] Deactivating bigquery
+2026-07-24 21:56:11.892 [info] Deactivating GCS
+2026-07-24 21:56:11.892 [info] Deactivating Databases
+2026-07-24 21:56:11.892 [info] Deactivating Catalog Feature
+2026-07-24 21:56:11.892 [info] Deactivating dataproc
+2026-07-24 21:56:11.892 [info] SparkMonitorPlugin: Deactivating...
+2026-07-24 21:56:11.893 [info] Deactivating settings
