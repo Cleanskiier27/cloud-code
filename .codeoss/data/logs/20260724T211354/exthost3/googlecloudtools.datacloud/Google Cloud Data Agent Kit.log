@@ -86,3 +86,4 @@ to select an already authenticated account to use.
 2026-07-24 21:27:55.510 [error] Proactive checkAuthorization failed Error calling Cloud Shell Theia Authorization. unauthorized.
 2026-07-24 21:27:55.515 [info] MCP config plugin: ideType: 6
 2026-07-24 21:27:56.894 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-24 21:29:03.115 [info] triggerGcloudAuthLogin called

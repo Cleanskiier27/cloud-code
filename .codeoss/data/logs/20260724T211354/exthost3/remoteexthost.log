@@ -66,3 +66,23 @@
     at /google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13884415
     at qe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13884386)
     at /google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13882749 cloudshell.authorize {"value":"google.cloud-shell","_lower":"google.cloud-shell"}
+2026-07-24 21:28:07.692 [error] Error: unauthorized.
+    at e.Authorization.authorize (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloud-shell/dist/extension.js:1:6008)
+    at CA.h (file:///google/devshell/editor/code-oss-for-cloud-shell/out/vs/workbench/api/node/extensionHostProcess.js:116:41743)
+    at t.CloudShellTheiaAuth.promptForOrGetAuth (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13193970)
+    at t.CloudShellTheiaAuth.runAuthorization (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13193634)
+    at t.CloudShellAuthProvider.getAccessToken (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13159270)
+    at t.ExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13233643)
+    at t.ExperimentationService.updateExperimentationData (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13233499)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13884415
+    at qe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13884386)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13882893 cloudshell.authorize {"value":"google.cloud-shell","_lower":"google.cloud-shell"}
+2026-07-24 21:28:08.694 [error] Error: Error calling Cloud Shell Theia Authorization. unauthorized.
+    at t.CloudShellTheiaAuth.runAuthorization (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13193730)
+    at t.CloudShellAuthProvider.getAccessToken (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13159270)
+    at t.ExperimentationService.updateExperimentationDataCache (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13233643)
+    at t.ExperimentationService.updateExperimentationData (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13233499)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13884415
+    at qe (/google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13884386)
+    at /google/devshell/editor/code-oss-for-cloud-shell/extensions/cloudcode/dist/extension.js:14:13882893
+2026-07-24 21:29:12.816 [info] ExtensionService#_doActivateExtension vscode.simple-browser, startup: false, activationEvent: 'onOpenExternalUri:https'
