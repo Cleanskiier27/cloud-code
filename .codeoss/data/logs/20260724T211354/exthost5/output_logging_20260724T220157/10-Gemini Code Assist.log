@@ -545,3 +545,5 @@ I0724 22:03:02.905127    8363 handler.go:188] cancel requested for 62 but not fo
 I0724 22:03:02.905148    8363 conn_opt.go:53] jsonrpc2: --> notif: $/cancelRequest: {"id":63}
 I0724 22:03:02.905157    8363 handler.go:184] cancel was requested for: 63, needs to be canceled: false
 I0724 22:03:02.905169    8363 handler.go:188] cancel requested for 63 but not found
+I0724 22:03:16.468448    8363 conn_opt.go:55] jsonrpc2: --> request #64: textDocument/hover: {"textDocument":{"uri":"file:///home/cleanskiier27/README.md"},"position":{"line":10,"character":0}}
+I0724 22:03:16.468668    8363 conn_opt.go:96] jsonrpc2: <-- result #64: textDocument/hover: null
