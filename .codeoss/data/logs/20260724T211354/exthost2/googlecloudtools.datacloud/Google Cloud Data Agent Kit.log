@@ -86,3 +86,10 @@ to select an already authenticated account to use.
 2026-07-24 21:21:05.806 [error] Proactive checkAuthorization failed Error calling Cloud Shell Theia Authorization. unauthorized.
 2026-07-24 21:21:05.811 [info] MCP config plugin: ideType: 6
 2026-07-24 21:21:07.260 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-24 21:50:28.996 [info] Deactivating bigquery
+2026-07-24 21:50:28.996 [info] Deactivating GCS
+2026-07-24 21:50:28.996 [info] Deactivating Databases
+2026-07-24 21:50:28.996 [info] Deactivating Catalog Feature
+2026-07-24 21:50:28.996 [info] Deactivating dataproc
+2026-07-24 21:50:28.996 [info] SparkMonitorPlugin: Deactivating...
+2026-07-24 21:50:28.996 [info] Deactivating settings
