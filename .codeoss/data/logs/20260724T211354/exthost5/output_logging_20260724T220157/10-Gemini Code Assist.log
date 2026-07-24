@@ -528,3 +528,20 @@ I0724 22:02:34.018840    8363 experiments.go:258] Applied experiment flag "DuetA
 I0724 22:02:34.018854    8363 experiments.go:262] Applied experiment flag "DuetAiLocalRag__substrings_to_identify_test_prompts" to substringsToIdentifyTestPrompts with value [test]
 I0724 22:02:34.019059    8363 configuration.go:660] Repopulating context cache from document cache
 I0724 22:02:34.019257    8363 workspace_context.go:256] removed 1 fragments for file /home/cleanskiier27/README.md from index
+I0724 22:02:56.165892    8363 conn_opt.go:55] jsonrpc2: --> request #60: textDocument/hover: {"textDocument":{"uri":"file:///home/cleanskiier27/README.md"},"position":{"line":13,"character":51}}
+I0724 22:02:56.166034    8363 conn_opt.go:96] jsonrpc2: <-- result #60: textDocument/hover: null
+I0724 22:03:02.707104    8363 conn_opt.go:55] jsonrpc2: --> request #61: textDocument/hover: {"textDocument":{"uri":"file:///home/cleanskiier27/README.md"},"position":{"line":9,"character":4}}
+I0724 22:03:02.707207    8363 conn_opt.go:55] jsonrpc2: --> request #62: textDocument/hover: {"textDocument":{"uri":"file:///home/cleanskiier27/README.md"},"position":{"line":9,"character":3}}
+I0724 22:03:02.707247    8363 conn_opt.go:55] jsonrpc2: --> request #63: textDocument/hover: {"textDocument":{"uri":"file:///home/cleanskiier27/README.md"},"position":{"line":11,"character":8}}
+I0724 22:03:02.707431    8363 conn_opt.go:96] jsonrpc2: <-- result #61: textDocument/hover: null
+I0724 22:03:02.707539    8363 conn_opt.go:96] jsonrpc2: <-- result #62: textDocument/hover: null
+I0724 22:03:02.707586    8363 conn_opt.go:96] jsonrpc2: <-- result #63: textDocument/hover: null
+I0724 22:03:02.904988    8363 conn_opt.go:53] jsonrpc2: --> notif: $/cancelRequest: {"id":61}
+I0724 22:03:02.905039    8363 handler.go:184] cancel was requested for: 61, needs to be canceled: false
+I0724 22:03:02.905058    8363 handler.go:188] cancel requested for 61 but not found
+I0724 22:03:02.905106    8363 conn_opt.go:53] jsonrpc2: --> notif: $/cancelRequest: {"id":62}
+I0724 22:03:02.905120    8363 handler.go:184] cancel was requested for: 62, needs to be canceled: false
+I0724 22:03:02.905127    8363 handler.go:188] cancel requested for 62 but not found
+I0724 22:03:02.905148    8363 conn_opt.go:53] jsonrpc2: --> notif: $/cancelRequest: {"id":63}
+I0724 22:03:02.905157    8363 handler.go:184] cancel was requested for: 63, needs to be canceled: false
+I0724 22:03:02.905169    8363 handler.go:188] cancel requested for 63 but not found
