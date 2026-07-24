@@ -103,3 +103,7 @@
 2026-07-20 20:35:11.614 [info] MCP config plugin: MCP config key: mcpServers
 2026-07-20 20:35:11.614 [info] Installed MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
 2026-07-20 20:35:11.614 [info] Updated MCP servers configuration in /home/cleanskiier27/.gemini/settings.json
+2026-07-20 20:43:25.018 [info] proactively refreshing access token
+2026-07-20 20:50:07.656 [info] MCP config plugin: ideType: 6
+2026-07-20 20:50:07.660 [info] MCP config plugin: MCP config key: mcpServers
+2026-07-20 21:42:25.575 [info] proactively refreshing access token
