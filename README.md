@@ -1,15 +1,53 @@
-Welcome to Google Cloud Shell, a tool for managing resources hosted on Google Cloud Platform!
-The machine comes pre-installed with the Google Cloud SDK and other popular developer tools.
+# Vertex AI Studio Frontend App with Node.js Backend
 
-Your 5GB home directory will persist across sessions, but the VM is ephemeral and will be reset
-approximately 20 minutes after your session ends. No system-wide change will persist beyond that.
+This repository contains a frontend and a Node.js backend, designed to run together.
+The backend acts as a proxy, handling Google Cloud API calls.
 
-Type "gcloud help" to get help on using Cloud SDK. For more examples, visit
-https://cloud.google.com/shell/docs/quickstart and https://cloud.google.com/shell/docs/examples
+This project is intended for demonstration and prototyping purposes only.
+It is not intended for use in a production environment.
 
-Type "cloudshell help" to get help on using the "cloudshell" utility.  Common functionality is
-aliased to short commands in your shell, for example, you can type "dl <filename>" at Bash prompt to
-download a file. Type "cloudshell aliases" to see these commands.
+## Prerequisites
 
-Type "help" to see this message any time. Type "builtin help" to see Bash interpreter help.
+To run this application locally, you need:
 
+*   **[Google Cloud SDK / gcloud CLI](https://cloud.google.com/sdk/docs/install)**: Follow the instructions to install the SDK.
+
+*   **gcloud Initialization**:
+    *   Initialize the gcloud CLI:
+        ```bash
+        gcloud init
+        ```
+    *   Authenticate for Application Default Credentials (needed to call Google Cloud APIs):
+        ```bash
+        gcloud auth application-default login
+        ```
+
+*   **Node.js and npm**: Ensure you have Node.js and its package manager, `npm`, installed on your machine.
+
+## Project Structure
+
+The project is organized into two main directories:
+
+*   `frontend/`: Contains the Frontend application code.
+*   `backend/`: Contains the Node.js/Express server code to proxy Google Cloud API calls.
+
+## Backend Environment Variables
+
+The `backend/.env.local` file is automatically generated when you download this application.
+It contains essential Google Cloud environment variables pre-configured based on your project settings at the time of download.
+
+The variables set in `backend/.env.local` are:
+*   `API_BACKEND_PORT`: The port the backend API server listens on (e.g., `5000`).
+*   `API_PAYLOAD_MAX_SIZE`: The maximum size of the request payload accepted by the backend server (e.g., `5mb`).
+*   `GOOGLE_CLOUD_LOCATION`: The Google Cloud region associated with your project.
+*   `GOOGLE_CLOUD_PROJECT`: Your Google Cloud Project ID.
+
+**Note:** These variables are automatically populated during the download process.
+You can modify the values in `backend/.env.local` if you need to change them.
+
+## Installation and Running the App
+
+To install dependencies and run your Google Cloud Vertex AI Studio App locally, execute the following command:
+
+```bash
+npm install && npm run dev
