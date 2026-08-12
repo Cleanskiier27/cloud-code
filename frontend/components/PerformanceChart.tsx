@@ -88,6 +88,9 @@ export default function PerformanceChart({ data, activeMetrics }: Props) {
           {activeMetrics.position && (
             <Line yAxisId="right" type="monotone" dataKey="position" name="Position" stroke="#e67c73" strokeWidth={2.5} dot={false} activeDot={{ r: 6, strokeWidth: 0 }} />
           )}
+          {activeMetrics.conversions && (
+            <Line yAxisId="left" type="monotone" dataKey="conversions" name="Conversions" stroke="#f59e0b" strokeWidth={2.5} dot={false} activeDot={{ r: 6, strokeWidth: 0 }} />
+          )}
         </LineChart>
       </ResponsiveContainer>
     </div>

@@ -1,11 +1,11 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import MetricCard from './components/MetricCard';
 import PerformanceChart from './components/PerformanceChart';
 import QueriesTable from './components/QueriesTable';
 import AIInsights from './components/AIInsights';
 import { generateMockData, topQueries } from './mockData';
-import { ActiveMetrics } from './types';
+import { ActiveMetrics, DataPoint } from './types';
 
 export default function App() {
   const [activeMetrics, setActiveMetrics] = useState<ActiveMetrics>({
@@ -13,10 +13,35 @@ export default function App() {
     impressions: true,
     ctr: false,
     position: false,
+    conversions: true,
   });
+  const [data, setData] = useState<DataPoint[]>(() => generateMockData());
 
-  // Generate mock data once on mount
-  const data = useMemo(() => generateMockData(), []);
+  useEffect(() => {
+    let isMounted = true;
+
+    fetch('/api/dashboard-metrics')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch dashboard metrics');
+        }
+        return response.json();
+      })
+      .then((payload) => {
+        if (isMounted && payload?.data?.length) {
+          setData(payload.data);
+        }
+      })
+      .catch(() => {
+        if (isMounted) {
+          setData(generateMockData());
+        }
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   // Calculate totals for the metric cards
   const totals = useMemo(() => {
@@ -24,12 +49,14 @@ export default function App() {
       clicks: acc.clicks + curr.clicks,
       impressions: acc.impressions + curr.impressions,
       ctr: acc.ctr + curr.ctr, 
-      position: acc.position + curr.position
-    }), { clicks: 0, impressions: 0, ctr: 0, position: 0 });
+      position: acc.position + curr.position,
+      conversions: acc.conversions + curr.conversions,
+    }), { clicks: 0, impressions: 0, ctr: 0, position: 0, conversions: 0 });
   }, [data]);
 
   const avgCtr = ((totals.clicks / totals.impressions) * 100).toFixed(1);
   const avgPosition = (totals.position / data.length).toFixed(1);
+  const conversionRate = ((totals.conversions / totals.clicks) * 100).toFixed(1);
 
   const toggleMetric = (metric: keyof ActiveMetrics) => {
     setActiveMetrics(prev => ({ ...prev, [metric]: !prev[metric] }));
@@ -53,7 +80,7 @@ export default function App() {
           </header>
 
           {/* Metrics Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-5 gap-4">
             <MetricCard
               title="Total clicks"
               value={totals.clicks.toLocaleString()}
@@ -82,6 +109,13 @@ export default function App() {
               isActive={activeMetrics.position}
               onClick={() => toggleMetric('position')}
             />
+            <MetricCard
+              title="Total conversions"
+              value={totals.conversions.toLocaleString()}
+              color="#f59e0b"
+              isActive={activeMetrics.conversions}
+              onClick={() => toggleMetric('conversions')}
+            />
           </div>
 
           {/* Chart Section */}
@@ -101,7 +135,7 @@ export default function App() {
           </div>
           
           <footer className="text-center text-sm text-gray-400 py-4">
-            Mock Dashboard inspired by Google Search Console
+            Conversion rate: {conversionRate}% across the last 30 days
           </footer>
         </div>
       </main>

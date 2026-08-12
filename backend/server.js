@@ -10,6 +10,7 @@ import { GoogleAuth } from 'google-auth-library';
 import fetch from 'node-fetch';
 import rateLimit from 'express-rate-limit';
 import { WebSocketServer, WebSocket } from 'ws';
+import { buildDashboardMetrics } from './dashboardMetrics.js';
 
 const app = express();
 app.use(express.json({limit: process?.env?.API_PAYLOAD_MAX_SIZE || "7mb"}));
@@ -30,6 +31,11 @@ if (!PROXY_HEADER) {
 }
 
 app.set('trust proxy', 1 /* number of proxies between user and server */);
+
+app.get('/api/dashboard-metrics', (_req, res) => {
+  const { data, summary } = buildDashboardMetrics();
+  res.json({ data, summary });
+});
 
 // IMPORTANT: Vertex AI Studio Rate Limiting
 // This rate limiting configuration protects your backend APIs from abuse.
